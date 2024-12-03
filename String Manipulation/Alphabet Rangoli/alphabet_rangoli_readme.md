@@ -13,7 +13,7 @@ print(string.ascii_lowercase)
 The chr() function converts a Unicode code point (integer) to its corresponding character.
 ```
 # Print alphabets using chr()
-for i in range(97, 123):  # ASCII values for 'a' to 'z' are 97 to 122
+for i in range(97, 123):  # ASCII values for 'a' to 'z' are 97 to 122; 97 inclusive and 123 exclusive.
     print(chr(i), end="")
 ```
 **Output:** abcdefghijklmnopqrstuvwxyz
