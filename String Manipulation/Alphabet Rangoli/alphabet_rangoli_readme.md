@@ -21,7 +21,7 @@ for i in range(97, 123):  # ASCII values for 'a' to 'z' are 97 to 122; 97 inclus
 ### Method 3: List Comprehension
 ```
 # Create a list of alphabets and join them
-alphabets = "".join([chr(i) for i in range(97, 123)])
+alphabets = "".join([chr(i) for i in range(97, 123)])    # The "".join() method takes the list of characters and concatenates them into a single string, with no separator ("").
 print(alphabets)
 ```
 **Output:** abcdefghijklmnopqrstuvwxyz
