@@ -1,4 +1,30 @@
-To print alphabets from a to z, we can use the string module or the `chr()` function with a range. For example,
+## Problem Overview
+The task is to generate a rangoli pattern using the English alphabets where each row contains a series of letters. The pattern is as follows:
+```
+#size 3
+
+----c----
+--c-b-c--
+c-b-a-b-c
+--c-b-c--
+----c----
+
+#size 5
+
+--------e--------
+------e-d-e------
+----e-d-c-d-e----
+--e-d-c-b-c-d-e--
+e-d-c-b-a-b-c-d-e
+--e-d-c-b-c-d-e--
+----e-d-c-d-e----
+------e-d-e------
+--------e--------
+```
+
+## My Notes:
+
+To print alphabets from a to z, use the string module or the `chr()` function with a range. For example,
 
 ### Method 1: Using `string.ascii_lowercase`
 ```
