@@ -8,22 +8,23 @@ Each program is housed in its own folder, which contains:
 
 ## Repository Structure
 The repository is organised as follows:
-learning_python/
-├── Sets/
-│   ├── Program 1/
-│        ├── program1.py
-│        └── README.md
-│   ├── Program 2/
-│        ├── program2.py
-│        └── README.md
-├── String Manipulation
-│   ├── Program 1/
-│       ├── program1.py
-│       └── README.md
-│   ├── Program 2/
-│        ├── program2.py
-│        └── README.md
-└── ...
+
+learning_python/<br>
+|-- Sets/<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- Program 1/<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- program1.py<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|__ README.md<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- Program 2/<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- program2.py<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|__ README.md<br>
+|-- String Manipulation<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- Program 1/<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- program1.py<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|__ README.md<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- Program 2/<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- program2.py<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|__ README.md<br>
+|__ ...
 
 Each folder contains:
 
