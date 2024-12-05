@@ -6,11 +6,11 @@ def print_rangoli(size):
         alphabets = string.ascii_lowercase
         rows = []
         for i in range(size):
-            subset = alphabets[i:size]
+            subset = alphabets[i:size] # subset = abcde; bcde
             # Create the pattern: reverse + forward (without duplicating the center)
-            row = "-".join(subset[::-1] + subset[1:])
+            row = "-".join(subset[::-1] + subset[1:]) # edcba + bcde => edcbabcde => e-d-c-b-a-b-c-d-e; edcb + cde => edcbcde => e-d-c-b-c-d-e
             # Center the row with dashes
-            rows.append(row.center(width, "-"))
+            rows.append(row.center(width, "-")) # e-d-c-b-a-b-c-d-e; --e-d-c-b-c-d-e--
         # Combine rows: top half + bottom half
         pattern = rows[::-1] + rows[1:]
         print("\n".join(pattern))
