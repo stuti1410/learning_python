@@ -28,12 +28,14 @@ learning_python/<br>
 
 Each folder contains:
 
-**Python File** (`.py`): The code for the program.
-**README.md**: An explanation of how the program works, any new concepts learned, and any helpful insights or tips.
+* **Python File** (`.py`): The code for the program.
+* **README.md**: An explanation of how the program works, any new concepts learned, and any helpful insights or tips.
 
 ## Topics Covered
 * Sets
 * String Manipulation
+
+More topics on the way!
 
 ## Setup
 To begin learning or experimenting with the code in this repository, you can simply clone the repository and start working on the Python files.
