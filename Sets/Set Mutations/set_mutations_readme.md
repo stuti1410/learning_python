@@ -95,3 +95,31 @@ Print the sum of elements in set A after performing all operations.
 ```
 38
 ```
+
+# My Notes
+
+In the line:
+```
+getattr(A, entry)(other)
+```
+The `getattr()` function is used to dynamically call a method of the set object A based on the operation name provided as input `(entry)`.
+
+The `getattr()` function retrieves an attribute of an object by name. Here:
+
+* `A`: The set object.
+* `entry`: The operation name (e.g., 'intersection_update', 'update').
+* `getattr(A, entry)`: Retrieves the method from A that matches the name in entry.
+  
+For example:
+
+If `entry = 'update'`, `getattr(A, 'update')` is equivalent to calling `A.update`.
+If `entry = 'intersection_update'`, `getattr(A, 'intersection_update')` is equivalent to calling `A.intersection_update`.
+
+### How it works
+```
+getattr(A, entry)(other)
+```
+* `getattr(A, entry)`: Finds the method of set A corresponding to the string entry.<br>
+   For example, if `entry = 'difference_update'`, this returns the method `A.difference_update`.
+* `(other)`: Calls the retrieved method with the argument other, which is the second set involved in the operation.<br>
+   Equivalent to `A.difference_update(other)` if `entry = 'difference_update'`.
