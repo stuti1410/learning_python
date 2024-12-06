@@ -47,4 +47,6 @@ cd learning_python
 ```
 
 ## How to Contribute
-I welcome contributions! If you want to add more programs, improve explanations, or share new tips and tricks you've learned, feel free to fork the repository and submit a pull request.
+I welcome contributions!
+
+If you want to add more programs, improve explanations, or share new tips and tricks you've learned, feel free to fork the repository and submit a pull request.
