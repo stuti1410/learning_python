@@ -1,6 +1,8 @@
 # learning_python
 
-Welcome to my **Learning Python** repository. This repository is a collection of notes, exercises, concepts, and programs created while learning python. It includes various topics ranging from basic syntax to more advanced concepts. The objective of this repository is to document my learning journey and to have a reference for future projects and studies.
+Welcome to my **Learning Python** repository.
+
+This repository is a collection of notes, exercises, concepts, and programs created while learning python. It includes various topics ranging from basic syntax to more advanced concepts. The objective of this repository is to document my learning journey and to have a reference for future projects and studies.
 
 Each program is housed in its own folder, which contains:
 * The Python script that implements the program.
