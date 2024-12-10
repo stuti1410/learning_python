@@ -24,3 +24,5 @@ for i in range(97, 123):  # ASCII values for 'a' to 'z' are 97 to 122; 97 inclus
     print(chr(i), end="")
 ```
 Output: abcdefghijklmnopqrstuvwxyz
+
+> Ascii value for lowercase alphabets ranges from 97 to 122 and uppercase alphabets are between 65 to 90.
