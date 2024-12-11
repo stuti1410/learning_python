@@ -13,12 +13,13 @@ The repository is organised as follows:
 
 learning_python/<br>
 |-- Sets/<br>
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- Program 1/<br>
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- program1.py<br>
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|__ README.md<br>
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- Program 2/<br>
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- program2.py<br>
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|__ README.md<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- Add/<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- add.py<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|__ add_readme.md<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- Check Strict Superset/<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- check_strict_superset.py<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|__ check_strict_superset_readme.md<br>
+|__ ...
 |-- String Manipulation<br>
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- Alphabet Rangoli/<br>
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- alphabet_rangoli.py<br>
