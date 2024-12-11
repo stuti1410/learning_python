@@ -19,3 +19,5 @@ BANANA
 ```
 Stuart 12
 ```
+
+[Click here](https://medium.com/@s.stuti990/the-minion-game-hackerrank-4f16d5505541) for the explanation of this coding challenge.
