@@ -38,6 +38,7 @@ Each folder contains:
 ## Topics Covered
 * Sets
 * String Manipulation
+* Debugging
 
 More topics on the way!
 
