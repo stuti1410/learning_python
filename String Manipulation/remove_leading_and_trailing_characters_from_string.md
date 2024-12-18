@@ -17,7 +17,7 @@ print(clean_text)  # Output: "Hello, World!"
 The `.strip()` method doesn't modify the original string but returns a new string with the unwanted characters removed.
 
 ## `.replace()`
-If you want to remove asterisks from both the beginning, end, and middle, you can use the `.replace()` method to remove all occurrences of the asterisk in the string.
+If you want to remove same character from both the beginning, end, and middle, you can use the `.replace()` method to remove all occurrences of the asterisk in the string.
 ```
 text = "***Hello,*** World***"
 clean_text = text.replace('*', '')
