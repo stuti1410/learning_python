@@ -39,6 +39,7 @@ Each folder contains:
 * Sets
 * String Manipulation
 * Debugging
+* Basic Data Types
 
 More topics on the way!
 
