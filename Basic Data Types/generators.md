@@ -37,7 +37,7 @@ print(next(gen_exp))  # Output: 1
 - `send(value)`: Sends a value to the generator, resumes its execution, and can modify its state.
 - `close()`: Stops the generator.
 
-Example with send():
+Example with `send()`:
 ```
 def interactive_gen():
     value = 0
