@@ -1,65 +1,53 @@
-Generators are higly involved with iterators, so before diving into genrators let's first understand what are iterators and how these work.
+# Generators
+**Generators** are a type of iterable, like lists or tuples. However, unlike lists, they do not store all their values in memory at once. Instead, they generate values on the fly and provide them one at a time, which makes them memory-efficient.
 
-**Iterators** are object that allows you to loop through all the elements of a collection (like a list or tuple) one at a time without needing to access them by index.
+- Generators are a way to create iterators using functions.
+- Instead of returning a single value and terminating, a generator function can yield multiple values, one at a time, pausing and resuming its state between each yield.
 
-**Generators** are a routine that can be used to control the iteration behaviour of a loop. A generator is very similar to a function that returns an array.
+## Key Features
+- **Lazy Evaluation:** Generators compute values as needed, which saves memory.
+- **State Retention:** They retain their state between yields, making them efficient for tasks like streaming data.
+- **Iterable Nature:** You can use a generator in a `for` loop or convert it to a list using `list()`.
 
-## Example for Iterators
-Let's traverse through the numbers 1 to 10 without using the `range()` function and the `while` loop.
-
+## How to Create Generators
+### 1. Using Generator Functions
+A generator function uses the `yield` keyword to produce values one at a time.
 ```
-x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]  #A list holding numbers 1 to 10.
+def count_up_to(n):
+    count = 1
+    while count <= n:
+        yield count
+        count += 1
 
-for elem in x:
-  print(elem)  #This will simply loop through the list.
-```
-
-**Output:**
-```
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
+# Using the generator
+gen = count_up_to(5)
+print(next(gen))  # Output: 1
+print(next(gen))  # Output: 2
 ```
 
-The problem here is that we are storing the numbers in memory which is not very efficient.
-For ten numbers it's fine but for a large dataset it would not make sense to store the entire data in the memory.
-
-Now, to overcome this issue, we can use `range()` function.
+### 2. Using Generator Expressions
+Generator expressions are like list comprehensions but use parentheses `()` instead of square brackets `[]`.
 ```
-for i in range(1, 11):
-  print(i)              #this gives the same result.
+gen_exp = (x ** 2 for x in range(5))
+print(next(gen_exp))  # Output: 0
+print(next(gen_exp))  # Output: 1
 ```
+## Generator Methods
+- `next()`: Fetch the next value from the generator.
+- `send(value)`: Sends a value to the generator, resumes its execution, and can modify its state.
+- `close()`: Stops the generator.
 
-If we check the size of the data structure and the `range()` function, the `range()` will have lesser size because it doesn't need to store all the elements.
+Example with send():
 ```
-import sys
+def interactive_gen():
+    value = 0
+    while True:
+        value = yield value
+        if value == 'stop':
+            break
 
-x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]  #A list holding numbers 1 to 10.
-
-print(sys.getsizeof(x))
-print(sys.getsizeof(range(1, 11)))
-
-for elem in x:
-  print(elem)  
-
-for i in range(1, 11):
-  print(i)              
-```
-
-**Output:**
-```
-136
-48
-1
-.
-.
-.
-10
+gen = interactive_gen()
+print(next(gen))       # Output: 0
+print(gen.send(10))    # Output: 10
+gen.close()
 ```
