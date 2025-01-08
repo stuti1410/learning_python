@@ -21,7 +21,7 @@ Average marks obtained by the particular student upto exactly two decimal places
 ```
 
 ## Code Explanation
-```
+```python
 if __name__ == '__main__':
     n = int(input())
     student_marks = {}
