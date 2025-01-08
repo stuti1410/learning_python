@@ -1,6 +1,6 @@
 ## 1. Using `.find()`
 The `.find()` method returns the index of the first occurrence of the substring. If the substring is not found, it returns `-1`.
-```
+```python
 text = "Hello, World!"
 substring = "World"
 index = text.find(substring)
@@ -12,7 +12,7 @@ else:
 
 ## 2. Using `in` operator
 The `in` operator checks if a substring exists within a string and returns `True` or `False`:
-```
+```python
 text = "Hello, World!"
 substring = "World"
 if substring in text:
@@ -23,7 +23,7 @@ else:
 
 ## 3. Using `.index()`
 Similar to `.find()`, the `.index()` method also returns the index of the first occurrence of the substring, but it raises a `ValueError` if the substring is not found.
-```
+```python
 text = "Hello, World!"
 substring = "World"
 try:
@@ -35,7 +35,7 @@ except ValueError:
 
 ## 4. Using `.count()`
 If you just want to know how many times a substring appears in the string, you can use `.count()`.
-```
+```python
 text = "Hello, World! World!"
 substring = "World"
 count = text.count(substring)
