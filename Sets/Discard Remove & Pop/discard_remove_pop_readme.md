@@ -3,7 +3,7 @@
 * Removes the element `x` from the set.
 * If `x` does not exist in the set, it raises a `KeyError`.
 * Returns `None`.
-```
+```python
 s = {1, 2, 3, 4, 5}
 s.remove(3)
 print(s)  # Output: {1, 2, 4, 5}
@@ -14,7 +14,7 @@ s.remove(10)  # KeyError: 10
 ## `.discard(x)`
 * Removes the element `x` from the set, but does not raise an error if `x` is not found.
 * Returns `None`.
-```
+```python
 s = {1, 2, 3, 4, 5}
 s.discard(3)
 print(s)  # Output: {1, 2, 4, 5}
@@ -25,7 +25,7 @@ s.discard(10)  # No error, set remains unchanged
 ## `.pop()`
 * Removes and returns an arbitrary element from the set.
 * If the set is empty, raises a `KeyError`.
-```
+```python
 s = {1, 2, 3}
 popped_element = s.pop()
 print(popped_element)  # Output: 1 (or any arbitrary element)
