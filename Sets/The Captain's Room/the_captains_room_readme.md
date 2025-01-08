@@ -29,7 +29,7 @@ The `*` operator in `print(*elem)` is called the **unpacking operator**. It is u
 
 * **Without `*`**:
 
-  ```
+  ```python
   elem = {8}
   print(elem)
   ```
@@ -38,7 +38,7 @@ The `*` operator in `print(*elem)` is called the **unpacking operator**. It is u
   {8}
   ```
 * **With `*`**:
-  ```
+  ```python
   elem = {8}
   print(*elem)
   ```
