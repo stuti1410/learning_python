@@ -6,7 +6,7 @@ In Python, while operations like union, intersection, difference, and symmetric 
 Updates the set by adding elements from another iterable (e.g., list, tuple, or another set).
 
 **Example:**
-```
+```python
 H = set("Hacker")
 R = set("Rank")
 H.update(R)
@@ -21,7 +21,7 @@ print(H)
 Keeps only elements present in both the original set and another iterable.
 
 **Example:**
-```
+```python
 H = set("Hacker")
 R = set("Rank")
 H.intersection_update(R)
@@ -36,7 +36,7 @@ print(H)
 Removes elements from the set that are found in another iterable.
 
 **Example:**
-```
+```python
 H = set("Hacker")
 R = set("Rank")
 H.difference_update(R)
@@ -51,7 +51,7 @@ print(H)
 Keeps only elements found in either set but not in both.
 
 **Example:**
-```
+```python
 H = set("Hacker")
 R = set("Rank")
 H.symmetric_difference_update(R)
@@ -99,7 +99,7 @@ Print the sum of elements in set A after performing all operations.
 # My Notes
 
 In the line:
-```
+```python
 getattr(A, entry)(other)
 ```
 The `getattr()` function is used to dynamically call a method of the set object A based on the operation name provided as input `(entry)`.
@@ -116,7 +116,7 @@ If `entry = 'update'`, `getattr(A, 'update')` is equivalent to calling `A.update
 If `entry = 'intersection_update'`, `getattr(A, 'intersection_update')` is equivalent to calling `A.intersection_update`.
 
 ### How it works
-```
+```python
 getattr(A, entry)(other)
 ```
 * `getattr(A, entry)`: Finds the method of set A corresponding to the string entry.<br>
