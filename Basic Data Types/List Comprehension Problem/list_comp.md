@@ -19,11 +19,17 @@ Print the list.
 
 ### Example
 x = 1
+
 y = 1
+
 z = 2
+
 n = 3
+
 In this case, all combinations will be:
+
 [[0, 0, 0], [0, 0, 1], [0, 0, 2], [0, 1, 0], [0, 1, 1], [0, 1, 2], [1, 0, 0], [1, 0, 1], [1, 0, 2], [1, 1, 0], [1, 1, 1], [1, 1, 2]]
 
 Print only those combinations that do not sum to n = 3.
+
 [[0, 0, 0], [0, 0, 1], [0, 0, 2], [0, 1, 0], [0, 1, 1], [1, 0, 0], [1, 0, 1], [1, 1, 0], [1, 1, 2]]
