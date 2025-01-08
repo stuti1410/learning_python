@@ -27,7 +27,7 @@ e-d-c-b-a-b-c-d-e
 To print alphabets from a to z, use the string module or the `chr()` function with a range. For example,
 
 ### Method 1: Using `string.ascii_lowercase`
-```
+```python
 import string
 
 # Print all lowercase alphabets
@@ -37,7 +37,7 @@ print(string.ascii_lowercase)
 
 ### Method 2: Using `chr()` with a Range
 The chr() function converts a Unicode code point (integer) to its corresponding character.
-```
+```python
 # Print alphabets using chr()
 for i in range(97, 123):  # ASCII values for 'a' to 'z' are 97 to 122; 97 inclusive and 123 exclusive.
     print(chr(i), end="")
@@ -45,7 +45,7 @@ for i in range(97, 123):  # ASCII values for 'a' to 'z' are 97 to 122; 97 inclus
 **Output:** abcdefghijklmnopqrstuvwxyz
 
 ### Method 3: List Comprehension
-```
+```python
 # Create a list of alphabets and join them
 alphabets = "".join([chr(i) for i in range(97, 123)])    # The "".join() method takes the list of characters and concatenates them into a single string, with no separator ("").
 print(alphabets)
