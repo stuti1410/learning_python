@@ -1,7 +1,7 @@
 The `.add()` method is used to insert a single element into an existing set. If the element is already present, it will not be added again, ensuring the uniqueness of the set.
 
 **Syntax**
-```
+```python
 set.add(element)
 ```
 
