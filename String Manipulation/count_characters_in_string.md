@@ -1,7 +1,7 @@
 To count the frequency of each character in a string:
 
 ## Using a Dictionary
-```
+```python
 string = "Hello, World!"
 char_count = {}
 
@@ -31,7 +31,7 @@ d: 1
 ```
 
 ## Using `collections.Counter`
-```
+```python
 from collections import Counter
 
 string = "Hello, World!"
@@ -57,7 +57,7 @@ d: 1
 ```
 
 ## Using a `for` loop with `set` to avoid duplicate counting
-```
+```python
 string = "Hello, World!"
 
 unique_chars = set(string)  # Get unique characters
