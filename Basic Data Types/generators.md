@@ -12,7 +12,7 @@
 ## How to Create Generators
 ### 1. Using Generator Functions
 A generator function uses the `yield` keyword to produce values one at a time.
-```
+```python
 def count_up_to(n):
     count = 1
     while count <= n:
@@ -27,7 +27,7 @@ print(next(gen))  # Output: 2
 
 ### 2. Using Generator Expressions
 Generator expressions are like list comprehensions but use parentheses `()` instead of square brackets `[]`.
-```
+```python
 gen_exp = (x ** 2 for x in range(5))
 print(next(gen_exp))  # Output: 0
 print(next(gen_exp))  # Output: 1
@@ -38,7 +38,7 @@ print(next(gen_exp))  # Output: 1
 - `close()`: Stops the generator.
 
 Example with `send()`:
-```
+```python
 def interactive_gen():
     value = 0
     while True:
