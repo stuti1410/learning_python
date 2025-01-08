@@ -3,7 +3,7 @@ The `ord()` function is used to get the Unicode code point (an integer represent
 This function is the opposite of the `chr()` function, which converts an integer back into a character.
 
 **Usage**
-```
+```python
 print(ord('a'))  # Output: 97
 print(ord('A'))  # Output: 65
 print(ord('1'))  # Output: 49
@@ -12,7 +12,7 @@ print(ord('@'))  # Output: 64
 The `print(ord('1'))` returns 49, which is the Unicode code point for the character `'1'`.
 
 If you want to convert the character `'1'` to the integer `1`, you can use the `int()` function instead:
-```
+```python
 print(int('1'))  # Output: 1
 ```
 
@@ -20,7 +20,7 @@ print(int('1'))  # Output: 1
 Using `chr()` with a Range.
 
 The `chr()` function converts a Unicode code point (integer) to its corresponding character.
-```
+```python
 # Print alphabets using chr()
 for i in range(97, 123):  # ASCII values for 'a' to 'z' are 97 to 122; 97 inclusive and 123 exclusive.
     print(chr(i), end="")
